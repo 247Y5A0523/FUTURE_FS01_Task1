@@ -1,0 +1,33 @@
+// src/components/Resume.jsx
+import React from "react";
+
+function Resume() {
+  return (
+    <section id="resume" className="resume-section">
+      <h2>My Resume</h2>
+      <p>
+        Download my resume to learn more about my education, skills, and
+        experience.
+      </p>
+      <a
+        href="/navyaares.pdf" // ✅ Your resume file
+        download="Navyaa_Resume.pdf" // ✅ Downloaded file name
+        className="resume-btn"
+      >
+        Download Resume
+      </a>
+
+      <div className="resume-preview">
+        <h3>Quick Overview</h3>
+        <ul>
+          <li><strong>Education:</strong> B.Tech in CSE (2021–2025)</li>
+          <li><strong>Skills:</strong> HTML, CSS, JavaScript, React, Node.js</li>
+          <li><strong>Experience:</strong> Internship in Web Development</li>
+          <li><strong>Certifications:</strong> Java, DBMS, Cloud Computing</li>
+        </ul>
+      </div>
+    </section>
+  );
+}
+
+export default Resume;
